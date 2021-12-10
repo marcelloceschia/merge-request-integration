@@ -273,9 +273,9 @@ class NodeSyncManagerImplTest {
             return null
         }
 
-        override fun isHolding(input: Any?, node: Node): Boolean {
-            return false
-        }
+//        override fun isHolding(input: Any?, node: Node): Boolean {
+//            return false
+//        }
     }
 
     companion object {

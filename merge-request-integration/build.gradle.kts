@@ -32,15 +32,15 @@ dependencies {
     implementation("org.kohsuke:github-api:$githubApiVersion")
     implementation("org.ocpsoft.prettytime:prettytime:$prettyTimeVersion")
 
-    compile("com.atlassian.commonmark:commonmark:$commonmarkVersion")
-    compile("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$kotlinxSerializationRuntimeVersion")
-    compile("com.github.javafaker:javafaker:$javaFakerVersion")
+    implementation("com.atlassian.commonmark:commonmark:$commonmarkVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationRuntimeVersion")
+    implementation("com.github.javafaker:javafaker:$javaFakerVersion")
 
     kapt("com.github.nhat-phan.foundation:foundation-processor:$foundationProcessorVersion")
     kaptTest("com.github.nhat-phan.foundation:foundation-processor:$foundationProcessorVersion")
 
     testImplementation(kotlin("test"))
-    testImplementation(kotlin("test-junit"))
+    testImplementation(kotlin("test-junit5"))
     testImplementation("io.mockk:mockk:1.9")
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.0")
 }
